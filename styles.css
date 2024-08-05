@@ -14,44 +14,45 @@ header {
     z-index: 1000;
 }
 
-nav ul {
-    list-style: none;
+#home {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    height: 100vh;
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 0;
+    align-items: center;
+    color: white;
+    text-align: left;
 }
 
-nav ul li {
-    margin: 0 1rem;
+.profile-image {
+    margin-right: 20px;
+    border: 5px solid white;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+.text-container {
+    max-width: 600px;
 }
 
 section {
     padding: 5rem 1rem;
-    margin-top: 3rem;
 }
 
-#home {
+#about, #contact {
     background-color: #f4f4f4;
-    text-align: center;
+}
+
+#skills {
+    background-color: #ffffff;
 }
 
 #portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    background-color: #f4f4f4;
 }
 
 .portfolio-item {
     background-color: #ddd;
     margin: 1rem;
     padding: 1rem;
-    width: 30%;
 }
 
 footer {
@@ -62,6 +63,20 @@ footer {
 }
 
 @media (max-width: 768px) {
+    #home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .text-container {
+        max-width: 100%;
+    }
+
     .portfolio-item {
         width: 100%;
     }
