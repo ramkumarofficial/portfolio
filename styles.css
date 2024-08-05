@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #3A3F44;
     color: #fff;
     padding: 1rem;
     position: fixed;
@@ -15,8 +15,9 @@ header {
 }
 
 #home {
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background: linear-gradient(to right, #4A90E2, #357ABD);
     height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,32 +26,74 @@ header {
 }
 
 .profile-image {
-    margin-right: 20px;
-    border: 5px solid white;
+    border: 5px solid white; 
+    box-shadow: 0 0 30px rgba(20, 18, 18, 0.8); 
+    border-radius: 8px; 
+    transform: rotate(20deg);
+    margin-right: 100pt;
 }
 
 .text-container {
     max-width: 600px;
+    border-radius: 8px;
+    margin-left: 40px;
+    border: 5px solid white; 
+    box-shadow: 0 0 30px rgba(20, 18, 18, 0.8); 
+    border-radius: 8px;
+    width: 40%;
+    text-align: center;
 }
 
 section {
     padding: 5rem 1rem;
 }
 
-#about, #contact {
-    background-color: #f4f4f4;
+#about {
+    background: linear-gradient(to right, #5A9FEE, #4887D6);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: left;
 }
 
 #skills {
-    background-color: #ffffff;
+    background: linear-gradient(to right, #6AAEF9, #5795E2);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: left;
+}
+
+#contact {
+    background: linear-gradient(to right, #7ABEF4, #689DDC);
+    color: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
 }
 
 #portfolio {
-    background-color: #f4f4f4;
+    background: linear-gradient(to right, #8ACDFD, #77B5E6);
+    color: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
 }
 
 .portfolio-item {
-    background-color: #ddd;
+    background-color: #DDD;
     margin: 1rem;
     padding: 1rem;
 }
@@ -58,7 +101,7 @@ section {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #333;
+    background-color: #3A3F44;
     color: #fff;
 }
 
