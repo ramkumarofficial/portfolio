@@ -104,6 +104,19 @@ footer {
     color: #fff;
 }
 
+/* Responsive Text */
+h1 {
+    font-size: clamp(2rem, 5vw, 4rem); /* Min: 2rem, Preferred: 5vw, Max: 4rem */
+}
+
+h2 {
+    font-size: clamp(1.5rem, 4vw, 3rem); /* Min: 1.5rem, Preferred: 4vw, Max: 3rem */
+}
+
+p, .nav-link {
+    font-size: clamp(1rem, 2.5vw, 1.5rem); /* Min: 1rem, Preferred: 2.5vw, Max: 1.5rem */
+}
+
 /* Responsive Design */
 @media (max-width: 1200px) {
     .text-container {
