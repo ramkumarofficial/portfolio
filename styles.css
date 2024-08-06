@@ -17,13 +17,13 @@ header {
 
 section {
     padding: 5rem 1rem;
+    min-height: 50vh; /* Set a minimum height */
+    box-sizing: border-box; /* Ensure padding is included in height calculations */
 }
 
 /* Home Section */
 #home {
     background: linear-gradient(to right, #4A90E2, #357ABD);
-    height: 100vh;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,8 +52,6 @@ section {
 /* About Section */
 #about {
     background: linear-gradient(to right, #5A9FEE, #4887D6);
-    height: 100vh;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,8 +62,6 @@ section {
 /* Skills Section */
 #skills {
     background: linear-gradient(to right, #6AAEF9, #5795E2);
-    height: 100vh;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,8 +73,6 @@ section {
 #contact {
     background: linear-gradient(to right, #7ABEF4, #689DDC);
     color: white;
-    height: 100vh;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,8 +83,6 @@ section {
 #portfolio {
     background: linear-gradient(to right, #8ACDFD, #77B5E6);
     color: white;
-    height: 100vh;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
