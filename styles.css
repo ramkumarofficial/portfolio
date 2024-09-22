@@ -167,6 +167,19 @@ section {
     border-radius: 8px;
 }
 
+.img-fluid {
+    width: 100%; /* Ensures responsiveness */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 200px; /* Set a maximum height */
+    object-fit: contain; /* Ensures the entire image is visible */
+    border-radius: 8px; /* Optional: for rounded corners */
+}
+#portfolio h3{
+    color: black;
+}
+
+
+
 /* Contact Section */
 #contact {
     background: linear-gradient(to right, #A3E1FE, #8FC8E4); /* Very Light Blue Gradient */

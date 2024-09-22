@@ -35,7 +35,7 @@
             <h3>Welcome to my portfolio!</h3>
         </div>
         <div class="image-box">
-            <img src="img\profile_formal.png" alt="Ramkumar's Image" class="profile-image">
+            <img src="img\profile_informal.png" alt="Ramkumar's Image" class="profile-image">
         </div>
     </section>
     
@@ -114,9 +114,11 @@
                 <!-- Add more skills as needed -->
             </div>
         </div>
+        
+
     </section>
     
-
+    <audio id="skillSound" src="sounds\click.mp3" preload="auto"></audio>
     <!-- Education Section -->
     <section id="education" class="text-center">
         <div class="container">
@@ -169,35 +171,73 @@
     </section>
     
 
-    <section id="portfolio" class="text-center">
+    <section id="portfolio" class="text-left">
         <div class="container">
-            <h2>Portfolio</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="portfolio-item">
-                        <img src="https://via.placeholder.com/300" alt="Project 1" class="img-fluid">
-                        <h3>Project 1</h3>
-                    </div>
+            <center><h2 style="color: rgb(0, 3, 59);;">Portfolio</h2></center>
+            
+            <!-- Project 1 -->
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6">
+                    <a href="https://melocomposer.streamlit.app/" target="_blank">
+                        <img src="img\melo.png" alt="Project 1" class="img-fluid">
+                    </a>
                 </div>
-                <div class="col-md-4">
-                    <div class="portfolio-item">
-                        <img src="https://via.placeholder.com/300" alt="Project 2" class="img-fluid">
-                        <h3>Project 2</h3>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="portfolio-item">
-                        <img src="https://via.placeholder.com/300" alt="Project 3" class="img-fluid">
-                        <h3>Project 3</h3>
-                    </div>
+                <div class="col-md-6">
+                    <h3>Melo-Composer</h3>
+                    <p>This is for ones who doesn't handled piano before. No worries you can play the piano, without playing the piano. 😅</p>
+
+                    <p>🤔Simply, how it works:</p>
+                    <li>1. Takes the input sequence of musical notes.</li> 
+                    <li>2. Generates sine wave of frequencies of each note and modulates it to almost similar to piano key's frequency waves.</li>
+                    <li>3. Converting that wave into hearable audio for all the notes in the sequence and merges it to a single audio file.</li> 
                 </div>
             </div>
+    
+            <!-- Project 2 -->
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6">
+                    <a href="https://project2website.com" target="_blank">
+                        <img src="img\noteconverter.png" alt="Project 2" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <h3>Musical Note Extractor.</h3>
+                    <li>Ever Heared a piano audio and worried about what note is being played.</li>
+                    <li>I Created an application which takes the clean piano audio and extracts the sequence of notes being played by the pianist.</li>
+                </div>
+            </div>
+    
+            <!-- Project 3 -->
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6">
+                        <img src="img\docu.png" alt="Project 3" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <h3>Document Retriever</h3>
+                    <li>
+                        "Information explosion" refers to the rapid increase in the amount of information that 
+                        is available and easily accessible through various forms of media, such as the internet, 
+                        social media. 
+                    </li>
+                    <li>
+                        This led to an abundance of information, both useful and unreliable, 
+                        which can be overwhelming for individuals and organizations to process.
+                    </li>
+                    <li>
+                        This Doc-triever project is a 
+                        software which can able to identify the keywords from the documents and enables user to easily
+                        retrieve the files using a search GUI.
+                    </li>
+                </div>
+            </div>
+    
         </div>
     </section>
-
+    
+    
     <section id="contact" class="text-center bg-light">
         <div class="container">
-            <h2>Contact</h2>
+            <h2 style="color: rgb(0, 3, 59);">Contact</h2>
             <p>Email: <a href="mailto:ramkumarkofficial@gmail.com">ramkumarkofficial@gmail.com</a></p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/ramkumar-k-33ba55257/" target="_blank">your-profile</a></p>
         </div>
