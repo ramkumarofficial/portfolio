@@ -31,23 +31,35 @@ section {
     color: white;
 }
 
-.text-left {
-    text-align: left;
-    margin-right: 20px; /* Space between text and image */
-}
 
-.image-box {
+#home .content {
     display: flex;
+    flex-wrap: wrap; /* Ensure the items wrap in smaller screens */
     justify-content: center;
     align-items: center;
 }
 
+#home .image-box {
+    flex: 1; /* Ensure the image and text take up appropriate space */
+    max-width: 1000px; /* Control the image size */
+}
+
+#home .text-container {
+    flex: 2;
+}
+
 .profile-image {
-    border: 5px solid white; 
-    box-shadow: 0 0 30px rgba(20, 18, 18, 0.8); 
-    border-radius: 8px;
-    width: 150px; /* Adjust as needed */
+    width: 100%; /* Ensure the image scales properly */
     height: auto;
+}
+
+@media (max-width: 768px) {
+    #home .content {
+        flex-direction: column; /* Stack image and text vertically on smaller screens */
+    }
+    #home .image-box {
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -159,7 +171,9 @@ section {
     color: white;
     text-align: center;
 }
-
+.portfolio-description{
+    text-align: left;
+}
 .portfolio-item {
     background-color: #DDD;
     margin: 1rem;
