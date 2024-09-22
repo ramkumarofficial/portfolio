@@ -17,8 +17,8 @@ header {
 
 section {
     padding: 5rem 1rem;
-    min-height: 50vh; /* Set a minimum height */
-    box-sizing: border-box; /* Ensure padding is included in height calculations */
+    min-height: 50vh;
+    box-sizing: border-box;
 }
 
 /* Home Section */
@@ -27,66 +27,137 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 50px 0;
     color: white;
+}
+
+.text-left {
     text-align: left;
+    margin-right: 20px; /* Space between text and image */
+}
+
+.image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .profile-image {
     border: 5px solid white; 
     box-shadow: 0 0 30px rgba(20, 18, 18, 0.8); 
-    border-radius: 8px; 
-    transform: rotate(20deg);
-    margin-right: 100px;
+    border-radius: 8px;
+    width: 150px; /* Adjust as needed */
+    height: auto;
 }
 
-.text-container {
-    max-width: 600px;
-    border-radius: 8px;
-    margin-left: 40px;
-    border: 5px solid white; 
-    box-shadow: 0 0 30px rgba(20, 18, 18, 0.8); 
-    width: 40%;
-    text-align: center;
-}
 
 /* About Section */
 #about {
-    background: linear-gradient(to right, #5A9FEE, #4887D6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: linear-gradient(to right, #5A9FEE, #4887D6); /* Lighter Blue Gradient */
     color: white;
-    text-align: left;
+    text-align: center;
 }
 
 /* Skills Section */
 #skills {
-    background: linear-gradient(to right, #6AAEF9, #5795E2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: linear-gradient(to right, #6AAEF9, #5795E2); /* Slightly Darker Blue Gradient */
     color: white;
-    text-align: left;
+    text-align: center;
 }
 
-/* Contact Section */
-#contact {
-    background: linear-gradient(to right, #7ABEF4, #689DDC);
-    color: white;
+.skill-item {
     display: flex;
+    align-items: center; /* Align items vertically centered */
     justify-content: center;
+    margin: 20px 0;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #fff; /* Button background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Elevation effect */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transitions */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.skill-item:hover {
+    transform: translateY(-5px); /* Elevate on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.skill-logo {
+    width: 40px; /* Adjust as necessary */
+    height: auto;
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.skill-item span {
+    font-size: 1.2rem;
+    color: rgb(0, 3, 59);
+}
+
+
+
+
+/* Education Section */
+#education {
+    background: linear-gradient(to right, #74B7F6, #5F9DD9); /* Light Blue Gradient */
+    color: white;
+    text-align: center;
+}
+
+/* Web Profiles Section */
+#web-profiles {
+    background: linear-gradient(to right, #8ACDFD, #77B5E6); /* Bright Blue Gradient */
+    color: white;
+    text-align: center;
+}
+.web-profile {
+    display: flex;
     align-items: center;
-    text-align: left;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%; /* Optional */
+    transition: transform 0.3s;
+}
+
+.web-profile a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.web-profile a:hover .profile-icon {
+    transform: scale(1.1);
+}
+
+.web-profile a:hover span {
+    color: #357ABD;
+}
+
+
+.web-icons a {
+    font-size: 1.5rem;
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.web-icons a:hover {
+    color: #357ABD;
 }
 
 /* Portfolio Section */
 #portfolio {
-    background: linear-gradient(to right, #8ACDFD, #77B5E6);
+    background: linear-gradient(to right, #9BD4FB, #82BAE0); /* Subtle Blue Gradient */
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
+    text-align: center;
 }
 
 .portfolio-item {
@@ -96,81 +167,21 @@ section {
     border-radius: 8px;
 }
 
-/* Footer */
-footer {
+/* Contact Section */
+#contact {
+    background: linear-gradient(to right, #A3E1FE, #8FC8E4); /* Very Light Blue Gradient */
+    color: white;
     text-align: center;
-    padding: 1rem;
-    background-color: #3A3F44;
-    color: #fff;
-}
-
-/* Responsive Text */
-h1 {
-    font-size: clamp(2rem, 5vw, 4rem); /* Min: 2rem, Preferred: 5vw, Max: 4rem */
-}
-
-h2 {
-    font-size: clamp(1.5rem, 4vw, 3rem); /* Min: 1.5rem, Preferred: 4vw, Max: 3rem */
-}
-
-p, .nav-link {
-    font-size: clamp(1rem, 2.5vw, 1.5rem); /* Min: 1rem, Preferred: 2.5vw, Max: 1.5rem */
 }
 
 /* Responsive Design */
-@media (max-width: 1200px) {
-    .text-container {
-        width: 50%;
-    }
-}
-
-@media (max-width: 992px) {
-    .text-container {
-        width: 60%;
-    }
-}
-
 @media (max-width: 768px) {
     #home {
         flex-direction: column;
         text-align: center;
     }
 
-    .profile-image {
-        margin-bottom: 20px;
-        margin-right: 0;
-    }
-
-    .text-container {
-        max-width: 100%;
-        margin-left: 0;
-    }
-
-    .portfolio-item {
-        width: 100%;
-    }
-}
-
-@media (max-width: 576px) {
-    /* Adjust layout for very small screens */
-    .profile-image {
-        width: 120px;
-        height: 120px;
-        margin-bottom: 15px;
-    }
-
-    .text-container {
-        padding: 1rem;
-        margin-left: 0;
-        border: none;
-    }
-
-    section {
-        padding: 3rem 1rem;
-    }
-
-    .portfolio-item {
-        width: 100%;
-        margin-bottom: 1rem;
+    .image-box {
+        margin-top: 1rem;
     }
 }

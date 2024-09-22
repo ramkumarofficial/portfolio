@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Ramkumar Portfolio</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="#">My Portfolio</a>
+            <a class="navbar-brand" href="#">Ramkumar Portfolio</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -20,38 +20,155 @@
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#web-profiles">Web Profiles</a></li>
                     <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <section id="home" class="text-light d-flex justify-content-center align-items-center">
-        <div class="container d-flex align-items-center">
-            <img src="profilepic.png" alt="Your Image" class="profile-image">
-            <div class="text-container ml-4">
-                <h3>Welcome to my Page!</h3>
-                <h3 style="color:black">I'm Ramkumar..</h3>
-                
+
+    <section id="home" class="d-flex justify-content-center align-items-center">
+        <div class="text-left mr-4">
+            <h1>Ramkumar K</h1>
+            <h3>Welcome to my portfolio!</h3>
+        </div>
+        <div class="image-box">
+            <img src="img\profile_formal.png" alt="Ramkumar's Image" class="profile-image">
+        </div>
+    </section>
+    
+
+    <section id="about" class="text-center">
+        <div class="container">
+            <h2 style="color: rgb(0, 3, 59);">About Me</h2>
+            <p>As a pre-final year Information Technology 
+                student, I have developed a solid foundation 
+                in Python programming, complemented by a 
+                genuine passion for audio information 
+                retrieval and processing. My projects 
+                reflect my proficiency in this field, 
+                including genre classification, voice cloning 
+                using a pretrained RVC-based model, audio 
+                information retrieval, and musical notes extraction. 
+                Additionally, I've created a musical note player to 
+                further showcase my skills.</p>
+
+                <p>I am excited to apply my problem-solving 
+                    abilities in a dynamic professional environment. 
+                    Committed to continuous learning, I thrive in 
+                    collaborative settings and look forward to making 
+                    a meaningful impact while further cultivating my 
+                    expertise in an organization.
+                </p>
+        </div>
+    </section>
+
+    <section id="skills" class="text-center bg-light">
+        <div class="container">
+            <h2 style="color: rgb(0, 3, 59);">Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="skill-item">
+                        <img src="img\python.png" alt="Skill 1" class="skill-logo">
+                        <span>Python programming(Expertise)</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skill-item">
+                        <img src="img\c.png" alt="Skill 2" class="skill-logo">
+                        <span>C Programming(Intermediate)</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skill-item">
+                        <img src="img\cpp.png" alt="Skill 3" class="skill-logo">
+                        <span>C++ Programming(Intermediate)</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skill-item">
+                        <img src="img\java.png" alt="Skill 3" class="skill-logo">
+                        <span>Java Programming(Beginner)</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skill-item">
+                        <img src="img\django.png" alt="Skill 3" class="skill-logo">
+                        <span>Django Framework(Basic)</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skill-item">
+                        <img src="img\html.png" alt="Skill 3" class="skill-logo">
+                        <span>Hyper Text Markup Language</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skill-item">
+                        <img src="img\css.png" alt="Skill 3" class="skill-logo">
+                        <span>Cascading Style Sheet</span>
+                    </div>
+                </div>
+                <!-- Add more skills as needed -->
             </div>
         </div>
     </section>
-    <section id="about" class="text-center">
+    
+
+    <!-- Education Section -->
+    <section id="education" class="text-center">
         <div class="container">
-            <h2>About Me</h2>
-            <p>A brief bio about yourself.</p>
+            <h2 style="color: rgb(0, 3, 59);">Education</h2>
+            <p><strong>Bachelor of Technology</strong> in Information Technology, at Bannari Amman Institute of Technology, 2022 - 2026</p>
+            <p><strong>SSLC</strong> with 98.8%, at NPR Matriculation and Higher Secondary School, Salem. (Passed in 2020)</p>
+            <p><strong>HSC</strong> with 94.7%, at NPR Matriculation and Higher Secondary School, Salem. (Passes in 2022)</p>
         </div>
     </section>
-    <section id="skills" class="text-center bg-light">
+
+    <!-- Web Profiles Section -->
+    <section id="web-profiles" class="text-center bg-light">
         <div class="container">
-            <h2>Skills</h2>
-            <ul class="list-inline">
-                <li class="list-inline-item">Skill 1</li>
-                <li class="list-inline-item">Skill 2</li>
-                <li class="list-inline-item">Skill 3</li>
-            </ul>
+            <h2 style="color: rgb(0, 3, 59);">Web Profiles</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="web-profile">
+                        <a href="https://leetcode.com/u/kramkumar/" target="_blank">
+                            <img src="img\leetcode.png" alt="LeetCode" class="profile-icon">
+                            <span>LeetCode</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="web-profile">
+                        <a href="https://www.codechef.com/users/kramkumar" target="_blank">
+                            <img src="img\codechef.png" alt="CodeChef" class="profile-icon">
+                            <span>CodeChef</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="web-profile">
+                        <a href="https://github.com/ramkumar-bitsathy" target="_blank">
+                            <img src="img\github.png" alt="GitHub" class="profile-icon">
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="web-profile">
+                        <a href="https://www.linkedin.com/in/ramkumar-k-33ba55257/" target="_blank">
+                            <img src="img\linkedin.png" alt="LinkedIn" class="profile-icon">
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    
+
     <section id="portfolio" class="text-center">
         <div class="container">
             <h2>Portfolio</h2>
@@ -77,14 +194,15 @@
             </div>
         </div>
     </section>
+
     <section id="contact" class="text-center bg-light">
         <div class="container">
             <h2>Contact</h2>
             <p>Email: <a href="mailto:ramkumarkofficial@gmail.com">ramkumarkofficial@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile/" target="_blank">your-profile</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/ramkumar-k-33ba55257/" target="_blank">your-profile</a></p>
         </div>
     </section>
-    
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
