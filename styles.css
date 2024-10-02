@@ -51,6 +51,9 @@ section {
 .profile-image {
     width: 100%; /* Ensure the image scales properly */
     height: auto;
+    border: 5px solid #005A9E; /* Solid border with blue color */ /* Makes the image circular */
+    padding: 5px; /* Optional: space between the image and the border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
